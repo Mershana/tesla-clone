@@ -8,24 +8,19 @@ body {
 
 .wrapper {
   .video-container {
-    height: 100vh;
-    width: 100%;
-    z-index: 1;
-
+    z-index: 6;
     .teaser {
       width: 100%;
-      height: 100vh;
+      height: 100%;
       position: absolute;
       top: 0;
       left: 0;
       object-fit: cover;
-      z-index: 1;
       filter: brightness(60%);
     }
 
     .header {
       position: fixed;
-      z-index: 4;
       width: 100%;
       padding-top: 20px;
       display: flex;
@@ -37,12 +32,11 @@ body {
       animation: header 2s ease forwards;
 
       .header__left {
-        z-index: 4;
+        
         cursor: pointer;
       }
       .header__middle,
       .header__right {
-        z-index: 4;
         display: flex;
         align-items: center;
         gap: 20px;
@@ -72,7 +66,6 @@ body {
       justify-content: space-between;
 
       .titles__cont {
-        z-index: 1;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -84,20 +77,19 @@ body {
           font-weight: 700;
           opacity: 0; /* Установите начальное значение прозрачности элемента на 0 */
           animation: title 3s ease forwards; /* Применяем анимацию с продолжительностью 2 секунды */
-          transform: translateY(90px);
+          transform: translateY(40px);
           transition: opacity 1s ease, transform 1s ease;
         }
         .subtitle {
           color: #fff;
           opacity: 0; /* Установите начальное значение прозрачности элемента на 0 */
           animation: subtitle 6s ease forwards; /* Применяем анимацию с продолжительностью 2 секунды */
-          transform: translateY(120px);
+          transform: translateY(80px);
           transition: opacity 1s ease, transform 1s ease;
         }
       }
       .titles__btn {
         padding-bottom: 30px;
-        z-index: 2;
         display: flex;
         .btn {
           color: #fff;
@@ -115,15 +107,13 @@ body {
 
 /* scroll-behavior: smooth; */
 .cont-sect {
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  scroll-behavior: smooth;
+  object-fit: cover;
+
   .cars__title {
     text-align: center;
     padding-top: 100px;
@@ -166,20 +156,30 @@ body {
   }
 }
 
+.model-3,
+.model-s,
+.model-x,
+.model-y {
+  object-fit: cover;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .model-3 {
-  background-image: url('https://digitalassets.tesla.com/tesla-contents/image/upload/h_2560,w_4096,c_fit,f_auto,q_auto:best/Homepage-Model-3-Desktop-LHD');
+  background-image: url(/images/model-3.jpg);
 }
 
 .model-y {
-  background-image: url('https://digitalassets.tesla.com/tesla-contents/image/upload/h_2400,w_2880,c_fit,f_auto,q_auto:best/Homepage-Model-Y-Global-Desktop');
+  background-image: url(/images/model-y.jpg);
 }
 
 .model-s {
-  background-image: url('https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto:best/Model-S-homepage-desktop');
+  background-image: url(/images/model_s.jpg);
 }
 
 .model-x {
-  background-image: url('https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/Homepage-Model-X-Desktop-LHD');
+  background-image: url(/images/model-x.jpg);
 }
 
 //animations block - .header__titles
