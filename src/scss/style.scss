@@ -6,6 +6,78 @@ body {
   font-family: "Comfortaa", sans-serif;
 }
 
+.header {
+  width: 100%;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  opacity: 0; /* Установите начальное значение прозрачности элемента на 0 */
+  animation: header 2s ease forwards;
+
+  .header__left {
+    
+    cursor: pointer;
+  }
+  .header__middle,
+  .header__right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .header__nav__btn {
+      color: $second_color;
+      padding: 7px;
+      border-radius: 50%;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .header__nav__btn:hover {
+      backdrop-filter: blur(13px);
+      background-color: rgba(142, 142, 143, 0.71);
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+  }
+}
+
+.header-model {
+  width: 100%;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  opacity: 0; /* Установите начальное значение прозрачности элемента на 0 */
+  animation: header 2s ease forwards;
+
+  .header__left {
+    
+    cursor: pointer;
+  }
+  .header__middle,
+  .header__right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .header__nav__btn {
+      color: #000;
+      padding: 7px;
+      border-radius: 50%;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .header__nav__btn:hover {
+      backdrop-filter: blur(13px);
+      background-color: rgba(142, 142, 143, 0.71);
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+  }
+}
+
 .wrapper {
   .video-container {
     z-index: 6;
@@ -19,47 +91,9 @@ body {
       filter: brightness(60%);
     }
 
-    .header {
-      position: fixed;
-      width: 100%;
-      padding-top: 20px;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-around;
-
-      opacity: 0; /* Установите начальное значение прозрачности элемента на 0 */
-      animation: header 2s ease forwards;
-
-      .header__left {
-        
-        cursor: pointer;
-      }
-      .header__middle,
-      .header__right {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        .header__nav__btn {
-          color: $second_color;
-          padding: 7px;
-          border-radius: 50%;
-          font-weight: 700;
-          font-size: 14px;
-        }
-        .header__nav__btn:hover {
-          backdrop-filter: blur(13px);
-          background-color: rgba(142, 142, 143, 0.71);
-          border-radius: 5px;
-          transition: 0.3s;
-        }
-      }
-    }
-
     .header__titles {
       position: relative;
       padding-top: 100px;
-      height: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -89,7 +123,7 @@ body {
         }
       }
       .titles__btn {
-        padding-bottom: 30px;
+        padding-bottom: 100px;
         display: flex;
         .btn {
           color: #fff;
@@ -101,12 +135,13 @@ body {
           animation: btn 6s ease forwards; /* Применяем анимацию с продолжительностью 2 секунды */
         }
       }
-    }
+    } 
   }
 }
 
 /* scroll-behavior: smooth; */
 .cont-sect {
+  height: 100%;
   z-index: 1;
   display: flex;
   flex-direction: column;
@@ -116,7 +151,7 @@ body {
 
   .cars__title {
     text-align: center;
-    padding-top: 100px;
+    margin-bottom: 400px;
 
     .name {
       margin-bottom: 15px;
