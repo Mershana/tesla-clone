@@ -154,19 +154,19 @@ body {
 }
 
 .model-3 {
-  background-image: url(/images/model-3.jpg);
+  background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/h_2560,w_4096,c_fit,f_auto,q_auto:best/Homepage-Model-3-Desktop-LHD");
 }
 
 .model-y {
-  background-image: url(/images/model-y.jpg);
+  background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/h_2400,w_2880,c_fit,f_auto,q_auto:best/Homepage-Model-Y-Global-Desktop");
 }
 
 .model-s {
-  background-image: url(/images/model_s.jpg);
+  background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-S-Desktop-LHD-6.22.jpg");
 }
 
 .model-x {
-  background-image: url(/images/model-x.jpg);
+  background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/Homepage-Model-X-Desktop-LHD");
 }
 
 @keyframes title {
