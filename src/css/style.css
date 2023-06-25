@@ -87,6 +87,7 @@ body {
   filter: brightness(60%);
 }
 .wrapper .video-container .header__titles {
+  height: 100%;
   position: relative;
   padding-top: 100px;
   display: flex;
